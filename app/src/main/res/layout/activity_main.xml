@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/numberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_a_number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/getFactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_fact"/>
+
+        <Button
+            android:id="@+id/getRandomFactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_random_fact"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayout"
+        android:padding="16dp"/>
+</RelativeLayout>
